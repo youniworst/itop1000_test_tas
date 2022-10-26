@@ -13,5 +13,4 @@ export const convertRate = async (from, to, amount = 1) => {
   )
     .then((response) => response.json())
     .then((response) => response.result)
-    .catch((err) => console.error(err));
 };
