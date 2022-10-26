@@ -1,5 +1,4 @@
-import { Header } from "./components/Header";
-import { Loader } from "./components/Loader";
+import { Loader, Header, Converter } from "./components";
 import { useLoading } from "./hooks";
 
 function App() {
@@ -8,6 +7,9 @@ function App() {
     <>
       {loading && <Loader />}
       <Header />
+      <main>
+        <Converter />
+      </main>
     </>
   );
 }

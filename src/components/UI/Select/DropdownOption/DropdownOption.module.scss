@@ -1,0 +1,21 @@
+.dropdown_item {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 7px;
+    gap: 0.5rem;
+
+    font-size: 20px;
+    line-height: 110%;
+    color: lightseagreen;
+
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+    &:hover {
+        background-color: #e2e8ef;
+    }
+}
