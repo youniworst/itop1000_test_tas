@@ -2,9 +2,9 @@ import { useState } from "react";
 import { DropdownOption } from "./DropdownOption";
 import styles from "./Select.module.scss";
 
-export const Select = ({ options, onChange }) => {
+export const Select = ({ options, onChange, value }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedValue, setSelectedValue] = useState("");
+  const [selectedValue, setSelectedValue] = useState(value);
 
   const toggleDropdown = () => {
     setIsOpen((prevState) => !prevState);
@@ -28,7 +28,12 @@ export const Select = ({ options, onChange }) => {
 
   return (
     <label className={styles.label} onClick={toggleDropdown}>
-      <input disabled className={styles.select} type={'text'} value={selectedValue} />
+      <input
+        disabled
+        className={styles.select}
+        type={"text"}
+        value={selectedValue}
+      />
       {isOpen && <div className={dropdownBodyClasses}>{optionElements}</div>}
     </label>
   );

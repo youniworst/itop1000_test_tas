@@ -4,10 +4,21 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
     background-color: lightseagreen;
     padding: 20px;
     border-radius: 10px;
+    min-height: 100px;
 }
+
 .currency {
     display: flex;
+}
+
+.equals {
+    display: flex;
+    align-items: center;
+    height: 27px;
+    font-size: 20px;
+    color: white;
 }

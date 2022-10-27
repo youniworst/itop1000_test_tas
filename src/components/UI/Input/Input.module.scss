@@ -1,31 +1,33 @@
 .label {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 50px;
+  position: relative;
 }
 
 .input {
-    max-width: 150px;
-    padding: 5px 20px;
-    height: 27px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border: none;
-    outline: none;
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-    
-    /* Firefox */
-    &[type=number] {
-      -moz-appearance: textfield;
-    }
+  max-width: 150px;
+  padding: 5px 20px;
+  height: 27px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: none;
+  outline: none;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  &[type=number] {
+    -moz-appearance: textfield;
+  }
 }
 
 .text {
-    color: rgb(210, 248, 248);
+  width: 230px;
+  overflow-wrap: normal;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  color: rgb(210, 248, 248);
 }
-
